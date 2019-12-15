@@ -10,7 +10,7 @@ This experimental guide mainly describes the application of yolov3 object detect
 
 ----
 
-##Requirements
+## Requirements
 + Ubuntu 18.04
 + Cuda 10.0
 + Cudnn 7.6.5
@@ -21,12 +21,12 @@ This experimental guide mainly describes the application of yolov3 object detect
 + Opencv 3.4.0
 + TesorRT (same with the tx2 device)
 
-##1.Label Images
+## 1.Label Images
 
 [LabelImg](https://github.com/tzutalin/labelImg "LabelImg") is a graphical image annotation tool. 
 
-###Installation
-####Build from source: Ubuntu Linux
+### Installation
+#### Build from source: Ubuntu Linux
 
 Python 2 + Qt4
 ```
@@ -46,10 +46,10 @@ python3 labelImg.py
 python3 labelImg.py [IMAGE_PATH] [PRE-DEFINED CLASS FILE]
 ```
 
-####Windows for exe
+#### Windows for exe
 There is a very simple method, the `LabelImg` provided a exe([here](https://github.com/tzutalin/labelImg/releases "exe")) for windows users.
 
-###Hotkeys
+### Hotkeys
 | Key | Function |
 | --------   | -----:  |
 | Ctrl + s | Save |
@@ -63,7 +63,7 @@ There is a very simple method, the `LabelImg` provided a exe([here](https://gith
 ----
 
 
-##2.Training Yolo Model
+## 2.Training Yolo Model
 [Yolo official website](https://pjreddie.com/darknet/ "Darknet")
 [Yolo official github](https://github.com/pjreddie/darknet.git "Darknet")
 
@@ -319,13 +319,12 @@ caffe_upsample_layer/
 ```
 
 <s>In caffe.proto, add this:
-
-<s>message LayerParameter {
-optional UpsampleParameter upsample_param = 149;
+message LayerParameter {
+    optional UpsampleParameter upsample_param = 149;
 }
 At the last line for `LayerParameter`.</s>
 
-#####Compile
+##### Compile
 In the caffe directory, run:
 ```
 make all -j8
@@ -335,7 +334,7 @@ After compiling successfully, take a test:
 make runtest -j8
 ```
 
-####Install Pycaffe
+#### Install Pycaffe
 Use caffe in python2.7, compile pycaffe firstly.
 ```
 cd caffe 
