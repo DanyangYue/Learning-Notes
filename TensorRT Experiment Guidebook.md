@@ -14,11 +14,11 @@
 </center>
 
 
-[**Guidebook Github**](https://github.com/DanyangYue/Learning-Notes/  "github")
+[**Guidebook Github**](https://github.com/DanyangYue/Learning-Notes/blob/master/TensorRT%20Experiment%20Guidebook.md  "github")
 
 ----
 
-This experimental guide mainly describes the application of yolov3 object detection algorithm to track obstacle detection. mainly including label images, train yolov3 model, darknet2caffe, caffemodel2engine.
+This experimental guide mainly describes the application of yolov3 object detection algorithm to track obstacle detection. Mainly including label images, train yolov3 model, darknet2caffe, caffemodel2engine.
 
 ----
 
@@ -657,7 +657,10 @@ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 ----
 
 
-<center>***--------------------------------------------------End--------------------------------------------------***</center>
+<center>
+**--------------------------------------------------End--------------------------------------------------**
+</center>
+
 
 ----
 
