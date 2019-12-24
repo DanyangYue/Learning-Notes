@@ -427,7 +427,7 @@ layer {
 }
 ```
 **Caution: It also needs to change the yolo configs in "YoloConfigs.h" if different kernels.** 
-**We use YOLO 416 and should comment the  YOLO 608 Kernal.**
+**We use YOLO 416 and should comment the  YOLO 608 Kernal, and change the CLASS_NUM.**
 
 ### 4.3 Run Sample
 
