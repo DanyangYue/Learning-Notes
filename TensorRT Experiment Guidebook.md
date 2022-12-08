@@ -1,5 +1,6 @@
 # <center>TensorRT-Yolov3 Experiment Guidebook </center>
 
+some library is too old, not worth consulting, TensorRT8.0+ onnx to engine.
 
 <center>
 
